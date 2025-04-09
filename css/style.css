@@ -109,7 +109,7 @@ body {
     position: relative;
 }
 
-/* Style général pour les box des destinations */
+
 .destination-box {
     position: relative;
     border-radius: 10px;
@@ -123,7 +123,7 @@ body {
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Style pour l'image de la destination */
+
 .destination-box img {
     width: 100%;
     height: 20vh;
@@ -131,12 +131,12 @@ body {
     transition: opacity 0.3s ease-in-out;
 }
 
-/* Effet d'assombrissement de l'image au survol */
+
 .destination-box:hover img {
     opacity: 0.8;
 }
 
-/* Style pour les informations de la destination */
+
 .destination-info {
     background-color: #f8f9fa;
     text-align: center;
@@ -160,7 +160,31 @@ body {
     border-radius: 25px;
 }
 
-/* Espacement et alignement des éléments */
+.ui.placeholder.segment {
+    background-color: #f9fafb;
+    border-radius: 15px;
+    padding: 3rem 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 60%;
+    text-align: center;
+  }
+  
+  .ui.icon.header {
+    color: #4183c4;
+    font-size: 1.5rem;
+  }
+  
+  .ui.primary.button {
+    background-color: #21ba45;
+    color: white;
+    font-weight: bold;
+    border-radius: 8px;
+  }
+  
+  .ui.icon.input input.prompt {
+    border-radius: 8px;
+  }
+  
 .container {
     margin-top: 50px;
 }
