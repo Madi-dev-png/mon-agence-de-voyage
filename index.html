@@ -1,0 +1,388 @@
+<!doctype html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Voyage&Vous</title>
+
+  <!-- Icônes font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+
+  <!-- Semantic UI -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.5.0/dist/semantic.min.js"></script>
+
+  <!-- Ta feuille de style personnalisée -->
+  <link rel="stylesheet" href="css/style.css">
+ 
+  <link rel="shortcut icon" href="img/d4bed22d6ef3246c62278fac9343ba6e.jpg" type="image/x-icon">
+</head>
+
+<body>
+
+ 
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="img/6ccc1eebf38e7582e944df3d0e2c64ef-removebg-preview.png" alt="logo" class="navbar-logo">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Destinations</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Promotions</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#">50% de réductions</a></li>
+              <li><a class="dropdown-item" href="#">80% de réductions</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Recherche" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Rechercher</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+
+  <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/810e85066345e4d1300d6930fcdbe290.jpg" class="d-block w-100" alt="Montagnes au lever du soleil">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Évasion au sommet</h5>
+          <p>Admirez la majesté des montagnes baignant dans la lumière dorée du matin.</p>
+          <button class="btn btn-primary mt-3" data-bs-toggle="modal" data-bs-target="#discoverModal">Afficher
+            modale</button>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/d35a338663df97e325bcd7d3352657b6.jpg" class="d-block w-100" alt="Plage paradisiaque">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Paradis sur Terre</h5>
+          <p>Des eaux turquoise, du sable blanc et le doux son des vagues…</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="img/f13145443178a974abfd428a54fa663f.jpg" class="d-block w-100"
+          alt="Ville historique au coucher du soleil">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Voyage dans le temps</h5>
+          <p>Flânez dans les ruelles d’une ville chargée d’histoire.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Précédent</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Suivant</span>
+    </button>
+  </div>
+
+
+  <div class="modal fade" id="discoverModal" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Bienvenue sur Voyage&Vous</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+        </div>
+        <div class="modal-body">
+          <p>Découvrez nos plus belles destinations.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  <section class="container my-5">
+    <h2 class="text-center mb-4">Nos Destinations</h2>
+    <div class="row g-4">
+        
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="destination-box shadow-lg rounded overflow-hidden">
+                <img src="img/f6b14cf1897538ec1d260a072945a041.jpg" class="img-fluid" alt="Japon">
+                <div class="destination-info p-4">
+                    <h5 class="destination-title">Japon</h5>
+                    <p class="destination-description">La ville lumière vous attend avec ses merveilles.</p>
+                    <span class="badge bg-dark">À partir de 499€</span>
+                </div>
+            </div>
+        </div>
+
+     
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="destination-box shadow-lg rounded overflow-hidden">
+                <img src="img/5d99d21576da1ba778fa23824b24df88.jpg" class="img-fluid" alt="Chine">
+                <div class="destination-info p-4">
+                    <h5 class="destination-title">Chine</h5>
+                    <p class="destination-description">Découvrez l'histoire et la culture de la Chine.</p>
+                    <span class="badge bg-dark">À partir de 699€</span>
+                </div>
+            </div>
+        </div>
+
+    
+        <div class="col-lg-4 col-md-6 col-12">
+            <div class="destination-box shadow-lg rounded overflow-hidden">
+                <img src="img/ec65f23542c0683df4e8e6e17dfe41f6.jpg" class="img-fluid" alt="Corée du Sud">
+                <div class="destination-info p-4">
+                    <h5 class="destination-title">Corée du Sud</h5>
+                    <p class="destination-description">Explorez des paysages à couper le souffle.</p>
+                    <span class="badge bg-dark">À partir de 799€</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+  <div class="container mt-5">
+    <h2 class="mb-4">Formulaire de Contact</h2>
+    <form id="contactForm">
+      <div class="mb-3">
+        <label for="name" class="form-label">Nom</label>
+        <input type="text" class="form-control" id="name" placeholder="Entrez votre nom">
+      </div>
+      <div class="mb-3">
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="Entrez votre email">
+      </div>
+      <div class="mb-3">
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Entrez votre message"></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Envoyer</button>
+    </form>
+    <div id="alertMessage" class="mt-3"></div>
+  </div>
+
+  
+  <div class="ui minimal comments mt-5 container">
+    <h3 class="ui dividing header">Commentaires</h3>
+
+  
+    <div class="comment">
+      <a class="avatar"><img src="https://semantic-ui.com/images/avatar/small/matt.jpg"></a>
+      <div class="content">
+        <a class="author">Priscille</a>
+        <div class="metadata"><span class="date">Aujourd'hui à 17h42</span></div>
+        <div class="text">Voyage&Vous m'a fait vivre une expérience inoubliable au Japon ! Organisation parfaite et paysages à couper le souffle.</div>
+        <div class="actions"><a class="reply">Répondre</a></div>
+      </div>
+    </div>
+
+
+    <div class="comment">
+      <a class="avatar"><img src="https://semantic-ui.com/images/avatar/small/elliot.jpg"></a>
+      <div class="content">
+        <a class="author">Emma</a>
+        <div class="metadata"><span class="date">Hier à 00h30</span></div>
+        <div class="text">J’ai réservé une escapade en Corée du Sud avec Voyage&Vous. Tout était bien pensé, de l’accueil à l’hôtel. Je recommande à 100% !</div>
+        <div class="actions"><a class="reply">Répondre</a></div>
+
+        <div class="comments">
+          <div class="comment">
+            <a class="avatar"><img src="https://semantic-ui.com/images/avatar/small/jenny.jpg"></a>
+            <div class="content">
+              <a class="author">Kassandra</a>
+              <div class="metadata"><span class="date">Tout à l'heure</span></div>
+              <div class="text">Emma a raison, j’ai voyagé avec eux en Chine et c’était un rêve éveillé ✨ Bravo à toute l’équipe de Voyage&Vous ! :)</div>
+              <div class="actions"><a class="reply">Répondre</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+ 
+    <div class="comment">
+      <a class="avatar"><img src="https://semantic-ui.com/images/avatar/small/joe.jpg"></a>
+      <div class="content">
+        <a class="author">Ange-Elisé</a>
+        <div class="metadata"><span class="date">il y a 5 jours</span></div>
+        <div class="text"> Le site est magnifique, et les offres sont super intéressantes. J’ai hâte de réserver mon prochain voyage !
+        </div></div>
+        <div class="actions"><a class="reply">Répondre</a></div>
+      </div>
+    </div>
+
+   
+    <form class="ui reply form">
+      <div class="field">
+        <textarea placeholder="Écris un commentaire..."></textarea>
+      </div>
+      <div class="ui blue labeled submit icon button">
+        <i class="icon edit"></i> Ajouter une réponse
+      </div>
+    </form>
+  </div>
+  <div class="calendar-container">
+    <div id="current-month">Avril 2025</div>
+    <button id="go-to-today" class="btn btn-primary">Aujourd'hui</button>
+
+   
+    <div class="reservation-form">
+        <h4>Réservez une date :</h4>
+        <form id="reservation-form">
+            <label for="reservation-date">Choisissez une date :</label>
+            <input type="date" id="reservation-date" class="form-control" required>
+            <button type="submit" class="btn btn-success mt-2">Réserver</button>
+        </form>
+    </div>
+
+   
+    <div class="calendar" id="calendar">
+    
+    </div>
+</div>
+
+<footer class="bg-dark text-white py-4 mt-5">
+    <div class="container text-center">
+      <p>&copy; 2025 Voyage&Vous. Tous droits réservés.</p>
+      <ul class="list-inline">
+        <li class="list-inline-item"><a href="#" class="text-white">À propos</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Contact</a></li>
+        <li class="list-inline-item"><a href="#" class="text-white">Politique de confidentialité</a></li>
+      </ul>
+      <div class="social-icons mt-3">
+        <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-white me-3"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+  
+
+<script>
+    const currentMonthElement = document.getElementById('current-month');
+    const calendarElement = document.getElementById('calendar');
+    const goToTodayButton = document.getElementById('go-to-today');
+    const reservationForm = document.getElementById('reservation-form');
+    const reservationDateInput = document.getElementById('reservation-date');
+
+    let currentDate = new Date(); 
+    let displayedMonth = currentDate.getMonth(); 
+    let displayedYear = currentDate.getFullYear(); 
+
+    let reservedDates = [];
+
+    function generateCalendar(month, year) {
+        const firstDayOfMonth = new Date(year, month, 1);
+        const lastDayOfMonth = new Date(year, month + 1, 0);
+        const numberOfDays = lastDayOfMonth.getDate(); 
+        const firstDayOfWeek = firstDayOfMonth.getDay(); 
+
+       
+        currentMonthElement.textContent = `${firstDayOfMonth.toLocaleString('default', { month: 'long' })} ${year}`;
+
+        calendarElement.innerHTML = '';
+
+        for (let i = 0; i < firstDayOfWeek; i++) {
+            const emptyDiv = document.createElement('div');
+            emptyDiv.classList.add('day');
+            calendarElement.appendChild(emptyDiv);
+        }
+
+       
+        for (let day = 1; day <= numberOfDays; day++) {
+            const dayDiv = document.createElement('div');
+            dayDiv.classList.add('day');
+            dayDiv.textContent = day;
+
+       
+            if (day === currentDate.getDate() && displayedMonth === currentDate.getMonth() && displayedYear === currentDate.getFullYear()) {
+                dayDiv.classList.add('today');
+            }
+
+           
+            if (reservedDates.includes(`${year}-${month + 1}-${day}`)) {
+                dayDiv.classList.add('reserved');
+            }
+
+            dayDiv.addEventListener('click', () => {
+                console.log(`Vous avez cliqué sur le ${day} ${firstDayOfMonth.toLocaleString('default', { month: 'long' })} ${year}`);
+            });
+
+            calendarElement.appendChild(dayDiv);
+        }
+    }
+
+    goToTodayButton.addEventListener('click', () => {
+        displayedMonth = currentDate.getMonth();
+        displayedYear = currentDate.getFullYear();
+        generateCalendar(displayedMonth, displayedYear);
+    });
+
+  
+    reservationForm.addEventListener('submit', (event) => {
+        event.preventDefault(); 
+
+        const selectedDate = new Date(reservationDateInput.value);
+        if (!selectedDate) return;
+
+        const dateString = `${selectedDate.getFullYear()}-${selectedDate.getMonth() + 1}-${selectedDate.getDate()}`;
+        if (!reservedDates.includes(dateString)) {
+            reservedDates.push(dateString);
+            alert(`Réservation réussie pour le ${selectedDate.toLocaleDateString()}`);
+            generateCalendar(displayedMonth, displayedYear);
+        } else {
+            alert(`La date du ${selectedDate.toLocaleDateString()} est déjà réservée.`);
+        }
+    });
+
+    generateCalendar(displayedMonth, displayedYear);
+</script>
+
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (event) {
+      event.preventDefault();
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+      const alertMessage = document.getElementById('alertMessage');
+
+      if (name === '' || email === '' || message === '') {
+        alertMessage.innerHTML = '<div class="alert alert-danger" role="alert">Tous les champs doivent être remplis.</div>';
+      } else if (!/\S+@\S+\.\S+/.test(email)) {
+        alertMessage.innerHTML = '<div class="alert alert-danger" role="alert">Veuillez entrer un email valide.</div>';
+      } else {
+        alertMessage.innerHTML = '<div class="alert alert-success" role="alert">Formulaire envoyé avec succès !</div>';
+      }
+    });
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
